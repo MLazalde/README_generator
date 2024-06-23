@@ -50,7 +50,7 @@ ${answers.tests}
 
 ##Questions
 
-GitHub profile: ${answers.gitHub}
+GitHub profile: ${answers.gitHub} /n
 If you have any questions, please email me at ${answers.email}.
 
 `;
