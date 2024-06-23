@@ -4,7 +4,6 @@ const generateMarkdown = require("./utils/generateMarkdown");
 const inquirer = require("inquirer");
 
 // TODO: Create an array of questions for user input
-// const questions =
 
 inquirer
   .prompt([
@@ -53,7 +52,7 @@ inquirer
       type: "list",
       message: "Are there any Tests you would like to add?",
       choices: ["No", "Yes"],
-      name: 'tests',
+      name: "tests",
     },
     {
       // Questions
@@ -70,9 +69,12 @@ inquirer
     },
   ])
   .then((answers) => {
-    return;
-    // Use user feedback for... whatever!!
+    let data = generateMarkdown(answers);
+    fs.writeFile("README.md", data, (err) => {
+      err ? console.log(err) : console.log("Your README.md has been generated");
+    });
   });
+
 //   .catch((error) => {
 //     if (error.isTtyError) {
 //       // Prompt couldn't be rendered in the current environment
@@ -81,8 +83,12 @@ inquirer
 //     }
 //   });
 
-// // TODO: Create a function to write README file
-// function fs.writeFile('README.md', generateMarkdown) {}
+// TODO: Create a function to write README file
+// function init() {
+//   fs.writeFile("README.md", data, (err) => {
+//     err ? console.log(Err) : console.log("Your README.md has been generated");
+//   });
+// }
 
 // // TODO: Create a function to initialize app
 // function init() {}
