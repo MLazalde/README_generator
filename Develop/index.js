@@ -23,7 +23,7 @@ inquirer
     {
       // Installation
       type: "list",
-      message: "Would you like to include Installation instructions?",
+      message: "Please include Installation instructions:",
       choices: ["No", "Yes"],
       name: "install",
     },
