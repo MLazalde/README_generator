@@ -1,11 +1,11 @@
 
-# ReadMe Gen
+# Mike
 
 ## Description
 
-Desc
+desc
 
-## Table of Contents (
+## Table of Contents 
 
 - [Installation](#installation)
 - [Usage](#usage)
@@ -20,22 +20,24 @@ No
 
 ## Usage
 
-automation
+Automate
 
 ## License
 
-MIT
+![GitHub License](https://img.shields.io/badge/license-None-blue.svg)
+
+None
 
 ## Contributing
 
-Mike
+None
 
 ## Tests
 
 No
 
-##Questions
+## Questions
 
-GitHub profile: Mike
-If you have any questions, please email me at Mike@gmail.com.
+GitHub Repository: [GitHub](Mike) /n
+If you have any questions, please email me at mike@mike.
 

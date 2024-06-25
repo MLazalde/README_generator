@@ -1,6 +1,10 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
-function renderLicenseBadge(license) {}
+function renderLicenseBadge(license) {
+  if (`${answers.license}` === "none") {
+    return [];
+  }
+}
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
@@ -38,6 +42,10 @@ ${answers.usage}
 
 ## License
 
+![GitHub License](https://img.shields.io/badge/license-${answers.license}-blue.svg)
+
+https://img.shields.io/badge/license-${}-blue.svg
+
 ${answers.license}
 
 ## Contributing
@@ -50,7 +58,7 @@ ${answers.tests}
 
 ## Questions
 
-GitHub profile: ${answers.gitHub} /n
+GitHub Repository: [GitHub](${answers.gitHub}) /n
 If you have any questions, please email me at ${answers.email}.
 
 `;

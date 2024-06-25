@@ -38,7 +38,7 @@ inquirer
       // Make this a list of options with Badge
       type: "list",
       message: "What license is being used?",
-      choices: ["MIT", "other"],
+      choices: ["None", "MIT License", "Apache License 2.0", "other"],
       name: "license",
     },
     {
@@ -58,7 +58,7 @@ inquirer
       // Questions
       // Enter my GitHub username and create link to my GH profile
       type: "input",
-      message: "Input your GitHub Username",
+      message: "Input your GitHub Repository",
       name: "gitHub",
     },
     {
